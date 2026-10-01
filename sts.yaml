@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: "$(BP_IMAGE_URI)"
+        image: "$BP_IMAGE_URI:$BP_IMAGE_TAG"
         ports:
         - containerPort: 80
           name: web
