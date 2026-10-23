@@ -18,7 +18,7 @@ spec:
       containers:
         - name: deploy-test-dev-dev
           # image: harbor.ldc.opstree.dev/library/ot-test:${BP_IMAGE_TAG}
-          image: ${BP_REG_CRED}:${BP_IMAGE_TAG}
+          image: ${BP_IMAGE_URI}:${BP_IMAGE_TAG}
           ports:
             - containerPort: 80
           resources:
